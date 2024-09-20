@@ -1,0 +1,20 @@
+services:
+  nuxi:
+    container_name: nuxi
+    build:
+      context: .
+      dockerfile: dockerfiles/nuxt.dockerfile
+    volumes:
+      - .:/app
+      - /app/node_modules
+    user: 1000:1000
+  dev:
+    container_name: dev
+    build:
+      context: .
+      dockerfile: dockerfiles/dev.dockerfile
+    volumes:
+      - .:/app
+      - /app/node_modules
+    ports:
+      - 3000:3000

@@ -1,0 +1,14 @@
+## Create project nuxt
+``` bash
+docker compose run --rm -it nuxi init . -f
+```
+
+## Add a page
+``` bash
+docker compose run --rm -it nuxi add page <pageName>
+```
+
+## Run project
+``` bash
+docker compose up dev
+```
