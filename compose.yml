@@ -18,3 +18,10 @@ services:
       - /app/node_modules
     ports:
       - 3000:3000
+  npm:
+    image: node:22-alpine
+    working_dir: /app
+    user: 1000:1000
+    entrypoint: [ 'npm' ]
+    volumes:
+      - ./:/app
