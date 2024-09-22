@@ -1,7 +1,7 @@
 <script setup lang="ts"></script>
 
 <template>
-  <div>
+  <div class="bg-slate-800 text-slate-50">
     <NuxtLayout>
       <NuxtPage />
     </NuxtLayout>
@@ -14,6 +14,6 @@ root {
 }
 
 body {
-  font: "Lucida Console", "Courier New", monospace;
+  font: ui-sans-serif system-ui;
 }
 </style>
