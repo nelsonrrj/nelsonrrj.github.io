@@ -2,8 +2,14 @@
 
 <template>
   <div>
-    <h1>About</h1>
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis cumque magni cum deserunt excepturi, provident corporis iusto officia veniam illo minima repellendus perspiciatis! Consectetur ducimus, saepe suscipit eaque provident temporibus.</p>
+    <h1 class="text-xl font-light mb-2">About:</h1>
+    <p class="font-light">
+      <span class="font-bold">Full Stack Developer</span> with experience in educational projects and enterprise
+      solutions, integrating with various software such as Google Calendar and Calendly, and CRM such as Pipedrive and
+      Active Campaign. I have led technical teams as <span class="font-bold">Tech Lead</span> in educational platforms.
+      In addition, I have collaborated in the development of platforms using technologies such as
+      <span class="font-bold">Laravel, Nuxt, Angular, React and Node-Express</span>.
+    </p>
   </div>
 </template>
 

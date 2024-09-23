@@ -1,7 +1,7 @@
 <script setup lang="ts"></script>
 
 <template>
-  <header class="flex flex-col">
+  <header class="flex flex-col mt-20">
     <Presentation class="mb-5" />
 
     <Navegation class="mb-5" />
