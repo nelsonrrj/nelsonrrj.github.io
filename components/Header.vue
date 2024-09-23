@@ -1,13 +1,14 @@
 <script setup lang="ts"></script>
 
 <template>
-  <header>
+  <header class="flex flex-col">
     <Presentation class="mb-5" />
 
     <Navegation class="mb-5" />
 
-    <!-- TODO: align SocialMedia at bottom -->
-    <SocialMedia />
+    <div class="flex-grow"></div>
+
+    <SocialMedia class="flex-shrink" />
   </header>
 </template>
 

@@ -9,7 +9,7 @@ import {
 <!-- TODO: It needs hover class -->
 
 <template>
-  <ul class="flex flex-row gap-4 p-2 justify-center">
+  <ul class="flex flex-row gap-4 p-8 justify-center">
     <li>
       <NuxtLink :to="LINK_GITHUB_PROFILE" target="_blank" external>
         <svg class="w-8 h-8" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
