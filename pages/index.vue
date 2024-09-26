@@ -2,7 +2,7 @@
 
 <template>
   <div class="grid grid-cols-2 gap-3 h-screen">
-    <Header/>
+    <Header />
     <Content />
   </div>
 </template>

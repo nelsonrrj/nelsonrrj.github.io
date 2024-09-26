@@ -1,16 +1,19 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+
+import { WORK_EXPERIENCE } from '~/data/workExperience'
+
+const works = ref(WORK_EXPERIENCE);
+
+</script>
 
 <template>
   <section>
     <h1>Work experience</h1>
-    <ol>
-      <li>Experience - 1</li>
-      <li>Experience - 2</li>
-      <li>Experience - 3</li>
-      <li>Experience - 4</li>
-      <li>Experience - 5</li>
-      <li>Experience - 6</li>
-    </ol>
+    <div>
+      <template v-for="work in works">
+        <ExperienceCard :work="work" />
+      </template>
+    </div>
   </section>
 </template>
 
