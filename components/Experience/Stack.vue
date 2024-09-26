@@ -1,13 +1,13 @@
 <script setup lang="ts">
-const { stack } = defineProps<{
-  stack: string[];
-}>()
+
+defineProps<{ stack: string[] }>()
+
 </script>
 
 <template>
-  <ul>
+  <ol>
     <li v-for="name in stack">{{ name }}</li>
-  </ul>
+  </ol>
 </template>
 
 <style scoped></style>
