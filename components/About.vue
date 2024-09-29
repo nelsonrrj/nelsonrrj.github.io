@@ -2,7 +2,6 @@
 
 <template>
   <div>
-    <h1 class="text-xl font-light mb-2">About:</h1>
     <p class="font-light">
       <span class="font-bold">Full Stack Developer</span> with experience in educational projects and enterprise
       solutions, integrating with various software such as Google Calendar and Calendly, and CRM such as Pipedrive and
