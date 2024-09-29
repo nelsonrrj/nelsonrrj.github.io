@@ -8,10 +8,9 @@ const works = ref(WORK_EXPERIENCE);
 
 <template>
   <section>
-    <h1>Work experience</h1>
-    <ul class="grid gap-5">
+    <ul>
       <li v-for="work in works">
-        <ExperienceCard :work="work" />
+        <ExperienceCard class="mb-8" :work="work" />
       </li>
     </ul>
   </section>
