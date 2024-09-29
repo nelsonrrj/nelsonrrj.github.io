@@ -1,11 +1,13 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+useHead({
+  title: 'Nelson Rodríguez',
+})
+</script>
 
 <template>
-  <div class="bg-slate-800 text-slate-50">
-    <NuxtLayout>
-      <NuxtPage />
-    </NuxtLayout>
-  </div>
+  <NuxtLayout>
+    <NuxtPage />
+  </NuxtLayout>
 </template>
 
 <style>

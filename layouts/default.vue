@@ -1,4 +1,10 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+useHead({
+  bodyAttrs: {
+    class: "bg-slate-800 text-slate-50"
+  }
+})
+</script>
 
 <template>
   <div class="container w-screen h-screen m-auto">
