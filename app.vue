@@ -1,6 +1,9 @@
 <script setup lang="ts">
 useHead({
-  title: 'Nelson Rodríguez',
+  title: 'Nelson Rodríguez - Desarrollador y Programador web',
+  meta: [
+    { name: 'description', content: 'Portafolio de Nelson Rodriguez desarrollador y programador web' }
+  ]
 })
 </script>
 
