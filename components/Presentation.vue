@@ -2,7 +2,7 @@
 
 <template>
   <div>
-    <NuxtLink to="/">
+    <NuxtLink to="#about">
       <h3>Hello, I'm</h3>
       <h1 class="text-5xl font-extrabold mb-2">Nelson Rodriguez</h1>
     </NuxtLink>
