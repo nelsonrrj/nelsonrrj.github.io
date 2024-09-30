@@ -1,1 +1,1 @@
-export * from "~/utlis/date"
+export * from '~/utlis/date'

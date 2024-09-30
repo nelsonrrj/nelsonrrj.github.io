@@ -2,13 +2,27 @@
 
 <template>
   <main class="overflow-y-auto">
-    <About id="about" class="pt-20 mb-20" />
+    <About
+      id="about"
+      class="mb-20 pt-20"
+    />
 
-    <WorkExperience id="experience" class="mb-20" />
+    <WorkExperience
+      id="experience"
+      class="mb-20"
+    />
 
-    <Projects v-if="$config.public.enableProjects" id="projects" class="mb-20" />
+    <Projects
+      v-if="$config.public.enableProjects"
+      id="projects"
+      class="mb-20"
+    />
 
-    <Blog v-if="$config.public.enableBlog" id="blog" class="mb-20" />
+    <Blog
+      v-if="$config.public.enableBlog"
+      id="blog"
+      class="mb-20"
+    />
   </main>
 </template>
 
