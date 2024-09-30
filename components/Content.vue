@@ -1,28 +1,38 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import navBarItems from '~/data/navBarItems'
+</script>
 
 <template>
-  <main class="overflow-y-auto">
-    <About
-      id="about"
-      class="mb-20 pt-20"
-    />
+  <main>
+    <section
+      :id="navBarItems.ABOUT.id"
+      class="pt-20"
+    >
+      <About />
+    </section>
 
-    <WorkExperience
-      id="experience"
-      class="mb-20"
-    />
+    <section
+      :id="navBarItems.EXPERIENCE.id"
+      class="pt-20"
+    >
+      <WorkExperience />
+    </section>
 
-    <Projects
+    <section
       v-if="$config.public.enableProjects"
-      id="projects"
-      class="mb-20"
-    />
+      :id="navBarItems.PROJECTS.id"
+      class="pt-20"
+    >
+      <Projects />
+    </section>
 
-    <Blog
+    <section
       v-if="$config.public.enableBlog"
-      id="blog"
-      class="mb-20"
-    />
+      :id="navBarItems.BLOG.id"
+      class="pt-20"
+    >
+      <Blog />
+    </section>
   </main>
 </template>
 

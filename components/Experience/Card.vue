@@ -6,15 +6,15 @@ defineProps<{ work: Experience }>()
 </script>
 
 <template>
-  <div
+  <article
     class="group grid grid-cols-8 rounded-md px-2 transition-colors hover:bg-slate-500/10"
   >
-    <div class="col-span-2">
+    <header class="col-span-2">
       <span class="text-xs font-semibold opacity-80">
         {{ basicFormat(work.sdate) }} -
         {{ work?.edate ? basicFormat(work.edate) : 'Actualmente' }}
       </span>
-    </div>
+    </header>
     <div class="col-span-6">
       <h1 class="text-lg font-bold group-hover:text-teal-300">
         {{ work.position }} · {{ work.company }}
@@ -22,7 +22,7 @@ defineProps<{ work: Experience }>()
       <p class="mb-3 text-pretty text-sm opacity-80">{{ work.description }}</p>
       <ExperienceStack :stack="work.stack" />
     </div>
-  </div>
+  </article>
 </template>
 
 <style scoped></style>

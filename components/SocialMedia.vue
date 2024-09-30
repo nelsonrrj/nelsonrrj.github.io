@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import {
   LINK_GITHUB_PROFILE,
-  WORK_EMAIL,
   LINK_LINKEDIN_PROFILE,
+  WORK_EMAIL,
 } from '~/data/social'
 </script>
 
@@ -15,7 +15,7 @@ import {
         external
       >
         <IconsGithub
-          class="size-8 rounded-full transition-all duration-500 ease-in-out hover:text-teal-300"
+          class="size-8 transition-all duration-500 ease-in-out hover:text-teal-300"
         />
       </NuxtLink>
     </li>

@@ -5,16 +5,17 @@ const works = ref(WORK_EXPERIENCE)
 </script>
 
 <template>
-  <section>
-    <ul>
-      <li v-for="work in works">
-        <ExperienceCard
-          class="mb-8"
-          :work="work"
-        />
-      </li>
-    </ul>
-  </section>
+  <ul>
+    <li
+      v-for="(work, index) in works"
+      :key="index"
+    >
+      <ExperienceCard
+        class="mb-8"
+        :work="work"
+      />
+    </li>
+  </ul>
 </template>
 
 <style scoped></style>
