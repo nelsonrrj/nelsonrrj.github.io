@@ -4,10 +4,14 @@
   <div>
     <NuxtLink to="#about">
       <h3>Hello, I'm</h3>
-      <h1 class="text-5xl font-extrabold mb-2">Nelson Rodriguez</h1>
+      <h1 class="mb-2 text-5xl font-extrabold">Nelson Rodriguez</h1>
     </NuxtLink>
-    <h2 class="text-lg font-thin mb-1">Computer Engineer | Backend developer</h2>
-    <p class="text-sm italic">"Crafting elegant solutions to complex problems"</p>
+    <h2 class="mb-1 text-lg font-thin">
+      Computer Engineer | Backend developer
+    </h2>
+    <p class="text-sm italic">
+      "Crafting elegant solutions to complex problems"
+    </p>
   </div>
 </template>
 
