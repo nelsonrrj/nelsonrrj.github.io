@@ -3,10 +3,12 @@ import withNuxt from './.nuxt/eslint.config.mjs'
 
 export default withNuxt(eslintPluginPrettierRecommended, {
   rules: {
-    semi: 0,
-    'vue/multi-word-component-names': 'off',
-    '@stylistic/quote-props': 'as-needed',
-    '@stylistic/brace-style': '1tbs',
-    '@stylistic/arrow-parens': 'always',
+    semi: ['error', 'never'],
+    'vue/attributes-order': ['error'],
+    'vue/multi-word-component-names': ['off'],
+    '@stylistic/quote-props': ['error', 'as-needed'],
+    '@stylistic/brace-style': ['error', '1tbs'],
+    '@stylistic/arrow-parens': ['error', 'always'],
+    '@stylistic/operator-linebreak': ['error', 'after'],
   },
 })
