@@ -1,22 +1,33 @@
 <script setup lang="ts">
 import navBarItems from '~/data/navBarItems'
 
-function onScroll() {
-  const ids = Object.values(navBarItems)
-    .map((item) => `#${item.id}`)
-    .reduce((total, id) => `${total} , ${id}`)
+const ACTIVE_CLASSNAME = 'active'
 
+const ids = Object.values(navBarItems)
+  .map((item) => `#${item.id}`)
+  .reduce((total, id) => `${total} , ${id}`)
+
+function getNavBarItems(): NodeListOf<Element> {
+  return document.querySelectorAll('header nav ul li a')
+}
+
+function activateFirst(): void {
+  const navItems = getNavBarItems()
+  navItems[0]?.classList.add(ACTIVE_CLASSNAME)
+}
+
+function onScroll(): void {
   const sections = document.querySelectorAll(ids)
-  const navItems = document.querySelectorAll('header nav ul li a')
+  const navItems = getNavBarItems()
 
   const callback = (entries: IntersectionObserverEntry[]) => {
     entries.forEach((entry: IntersectionObserverEntry) => {
       if (entry.isIntersecting || entry.intersectionRatio) {
         navItems.forEach((item: Element | HTMLElement) => {
           if (item.getAttribute('aria-label') == entry.target.id) {
-            item.firstElementChild?.classList.add('w-8')
+            item.classList.add(ACTIVE_CLASSNAME)
           } else {
-            item.firstElementChild?.classList.remove('w-8')
+            item.classList.remove(ACTIVE_CLASSNAME)
           }
         })
       }
@@ -44,6 +55,7 @@ function onScroll() {
 }
 
 onMounted(() => {
+  activateFirst()
   document.addEventListener('scroll', onScroll)
 })
 

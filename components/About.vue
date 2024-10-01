@@ -9,7 +9,8 @@
     <span class="font-bold">Tech Lead</span> in educational platforms. In
     addition, I have collaborated in the development of platforms using
     technologies such as
-    <span class="font-bold">Laravel, Nuxt, Angular, React and Node-Express</span
+    <span class="font-bold">
+      Laravel, Nuxt, Angular, React and Node-Express</span
     >.
   </p>
 </template>
