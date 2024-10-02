@@ -1,6 +1,6 @@
-import type { NavBarItem } from '~/types/navBarItem.types'
+import type { NavBarItems } from '~/types/navBarItem'
 
-export default {
+const items: NavBarItems = {
   ABOUT: {
     title: 'Sobre mí',
     id: 'about',
@@ -21,4 +21,6 @@ export default {
     id: 'projects',
     link: '/#projects',
   },
-} as { [key: string]: NavBarItem }
+}
+
+export default items

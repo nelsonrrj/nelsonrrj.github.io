@@ -3,3 +3,7 @@ export interface NavBarItem {
   id: string
   link: string
 }
+
+export interface NavBarItems {
+  [key: string]: NavBarItem
+}

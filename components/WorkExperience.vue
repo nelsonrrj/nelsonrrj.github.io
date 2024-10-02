@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import { WORK_EXPERIENCE } from '~/types/experience.types'
+import experience from '~/data/workExperience'
 
-const works = ref(WORK_EXPERIENCE)
+const works = ref(experience)
 </script>
 
 <template>

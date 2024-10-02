@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import type { NavBarItem } from '~/types/navBarItem.types'
+import type { NavBarItem } from '~/types/navBarItem'
 
 defineProps<{ item: NavBarItem }>()
 </script>
