@@ -1,16 +1,16 @@
 const MONTHS = [
-  'Jan',
+  'Ene',
   'Feb',
   'Mar',
   'Apr',
   'May',
   'Jun',
   'Jul',
-  'Aug',
+  'Ago',
   'Sep',
   'Oct',
   'Nov',
-  'Dec',
+  'Dic',
 ]
 
 export const basicFormat = (date: Date): string => {
