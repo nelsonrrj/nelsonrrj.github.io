@@ -1,14 +1,14 @@
 <script setup lang="ts"></script>
 
 <template>
-  <header class="sticky top-20 flex h-96 flex-col">
+  <header class="z-50 flex flex-col bg-slate-800 lg:sticky lg:top-20 lg:h-96">
     <Presentation class="mb-5" />
 
-    <Navigation class="mb-5" />
+    <Navigation class="mb-5 hidden lg:block" />
 
-    <div class="flex-grow"></div>
+    <div class="hidden flex-grow lg:block"></div>
 
-    <SocialMedia class="flex-shrink" />
+    <SocialMedia class="flex-shrink print:hidden" />
   </header>
 </template>
 

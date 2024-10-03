@@ -12,7 +12,7 @@ useHead({
     },
   ],
   bodyAttrs: {
-    class: 'bg-slate-800 text-slate-50 cursor-default',
+    class: 'bg-slate-800 text-slate-50 cursor-default print:text-black',
   },
   htmlAttrs: {
     class: 'scroll-smooth',

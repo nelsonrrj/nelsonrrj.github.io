@@ -4,35 +4,19 @@ import navBarItems from '~/data/navBarItems'
 
 <template>
   <main>
-    <section
+    <ContentSectionElement
       :id="navBarItems.ABOUT.id"
-      class="pt-20"
+      :title="navBarItems.ABOUT.title"
     >
       <About />
-    </section>
+    </ContentSectionElement>
 
-    <section
+    <ContentSectionElement
       :id="navBarItems.EXPERIENCE.id"
-      class="pt-20"
+      :title="navBarItems.EXPERIENCE.title"
     >
       <WorkExperience />
-    </section>
-
-    <section
-      v-if="$config.public.enableProjects"
-      :id="navBarItems.PROJECTS.id"
-      class="pt-20"
-    >
-      <Projects />
-    </section>
-
-    <section
-      v-if="$config.public.enableBlog"
-      :id="navBarItems.BLOG.id"
-      class="pt-20"
-    >
-      <Blog />
-    </section>
+    </ContentSectionElement>
   </main>
 </template>
 
