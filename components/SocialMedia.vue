@@ -2,44 +2,52 @@
 import {
   LINK_GITHUB_PROFILE,
   LINK_LINKEDIN_PROFILE,
+  LINK_WHATSAPP,
   WORK_EMAIL,
 } from '~/data/social'
 </script>
 
 <template>
-  <ul class="flex flex-row justify-center gap-4 p-8">
+  <ul class="flex flex-row justify-center gap-4">
     <li>
-      <NuxtLink
-        :to="LINK_GITHUB_PROFILE"
-        target="_blank"
-        external
-      >
-        <IconsGithub
-          class="size-8 transition-all duration-500 ease-in-out hover:text-teal-300"
-        />
-      </NuxtLink>
-    </li>
-    <li>
-      <NuxtLink
+      <SocialMediaIcon
         :to="LINK_LINKEDIN_PROFILE"
-        target="_blank"
-        external
+        label="linkedin"
       >
-        <IconsLinkedin
-          class="size-8 transition-all duration-500 ease-in-out hover:text-teal-300"
-        />
-      </NuxtLink>
+        <template #icon="{ classes }">
+          <IconsLinkedin :class="classes" />
+        </template>
+      </SocialMediaIcon>
     </li>
     <li>
-      <NuxtLink
-        :to="`mailto:${WORK_EMAIL}`"
-        target="_blank"
-        external
+      <SocialMediaIcon
+        :to="LINK_GITHUB_PROFILE"
+        label="github"
       >
-        <IconsMail
-          class="size-8 transition-all duration-500 ease-in-out hover:text-teal-300"
-        />
-      </NuxtLink>
+        <template #icon="{ classes }">
+          <IconsGithub :class="classes" />
+        </template>
+      </SocialMediaIcon>
+    </li>
+    <li>
+      <SocialMediaIcon
+        :to="`mailto:${WORK_EMAIL}`"
+        label="email"
+      >
+        <template #icon="{ classes }">
+          <IconsMail :class="classes" />
+        </template>
+      </SocialMediaIcon>
+    </li>
+    <li>
+      <SocialMediaIcon
+        :to="LINK_WHATSAPP"
+        label="whatsapp"
+      >
+        <template #icon="{ classes }">
+          <IconsWhatsapp :class="classes" />
+        </template>
+      </SocialMediaIcon>
     </li>
   </ul>
 </template>
