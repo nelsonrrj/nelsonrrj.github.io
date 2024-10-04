@@ -73,6 +73,9 @@ onUnmounted(() => {
       <li>
         <NavBarItem :item="navBarItems.EXPERIENCE" />
       </li>
+      <li>
+        <NavBarItem :item="navBarItems.CONTACT" />
+      </li>
     </ul>
   </nav>
 </template>

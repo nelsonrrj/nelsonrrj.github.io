@@ -10,5 +10,13 @@ export default withNuxt(eslintPluginPrettierRecommended, {
     '@stylistic/brace-style': ['error', '1tbs'],
     '@stylistic/arrow-parens': ['error', 'always'],
     '@stylistic/operator-linebreak': ['error', 'after'],
+    '@stylistic/member-delimiter-style': [
+      'error',
+      {
+        multiline: { delimiter: 'none' },
+        singleline: { delimiter: 'semi', requireLast: false },
+        multilineDetection: 'brackets',
+      },
+    ],
   },
 })

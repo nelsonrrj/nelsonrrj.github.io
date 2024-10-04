@@ -17,7 +17,7 @@ defineProps({
     class="pb-10 lg:pt-20"
   >
     <ContentSectionHeader
-      class="block lg:hidden"
+      class="block"
       :title="title"
     />
     <slot />

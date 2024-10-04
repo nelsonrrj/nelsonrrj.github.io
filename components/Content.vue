@@ -16,6 +16,12 @@ import navBarItems from '~/data/navBarItems'
     >
       <WorkExperience />
     </ContentSectionElement>
+    <ContentSectionElement
+      :id="navBarItems.CONTACT.id"
+      :title="navBarItems.CONTACT.title"
+    >
+      <Contact />
+    </ContentSectionElement>
   </main>
 </template>
 
