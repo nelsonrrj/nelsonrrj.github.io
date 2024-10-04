@@ -17,7 +17,7 @@ defineProps<{ work: Experience }>()
     </header>
     <div>
       <h1 class="text-lg font-bold group-hover:text-teal-300">
-        {{ work.position }} · {{ work.company }}
+        {{ work.position }} · {{ work.company }} · {{ work.location }}
       </h1>
       <p class="mb-3 text-pretty text-sm">{{ work.description }}</p>
       <ExperienceStack :stack="work.stack" />

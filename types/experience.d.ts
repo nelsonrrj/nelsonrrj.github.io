@@ -5,4 +5,6 @@ export interface Experience {
   edate?: Date
   description: string
   stack: Array<string>
+  location: string
+  bulletPoints?: Array<string>
 }
