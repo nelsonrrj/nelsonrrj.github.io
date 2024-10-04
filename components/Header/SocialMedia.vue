@@ -1,9 +1,9 @@
 <script setup lang="ts">
 import {
+  DATA_CONTACT_EMAIL,
   LINK_GITHUB_PROFILE,
   LINK_LINKEDIN_PROFILE,
   LINK_WHATSAPP,
-  WORK_EMAIL,
 } from '~/data/social'
 </script>
 
@@ -31,7 +31,7 @@ import {
     </li>
     <li>
       <SocialMediaIcon
-        :to="`mailto:${WORK_EMAIL}`"
+        :to="`mailto:${DATA_CONTACT_EMAIL}`"
         label="email"
       >
         <template #icon="{ classes }">

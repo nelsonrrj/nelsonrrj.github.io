@@ -1,9 +1,9 @@
 <script lang="ts" setup>
 import {
-  FULL_NUMBER,
+  DATA_CONTACT_EMAIL,
+  DATA_FULL_NUMBER,
   LINK_GITHUB_PROFILE,
   LINK_LINKEDIN_PROFILE,
-  WORK_EMAIL,
 } from '~/data/social'
 </script>
 
@@ -13,13 +13,13 @@ import {
       <li>
         <ContactItem
           title="Telefono"
-          :label="`+${FULL_NUMBER}`"
+          :label="`+${DATA_FULL_NUMBER}`"
         />
       </li>
       <li>
         <ContactItem
           title="Correo electrónico"
-          :label="WORK_EMAIL"
+          :label="DATA_CONTACT_EMAIL"
         />
       </li>
       <li>

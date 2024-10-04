@@ -53,7 +53,7 @@ const WORK_EXPERIENCE = [
     description:
       'Desarrollé una página web para la gestión administrativa de proveedores de servicio y clientes, optimizando la eficiencia en el manejo de información. Además, colaboré en equipo para crear un sistema integral para la planificación, venta y mantenimiento de proyectos inmobiliarios residenciales. Para esto utilicé las herramientas Angular (v7), Laravel (v5.7) y MySQL.',
     stack: ['Angular', 'Typescript', 'Laravel', 'PHP', 'MySql'],
-    location: 'Remoto',
+    location: 'Venezuela',
     bulletPoints: [],
   },
   {

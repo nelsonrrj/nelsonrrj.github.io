@@ -6,7 +6,7 @@ defineProps<{ label: string; title: string }>()
   <div>
     <span>{{ title }}: </span>
     <NuxtLink>
-      <span class="cursor-copy text-teal-300">{{ label }}</span>
+      <span class="text-teal-300">{{ label }}</span>
     </NuxtLink>
   </div>
 </template>
