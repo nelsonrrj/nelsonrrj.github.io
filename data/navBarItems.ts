@@ -21,6 +21,11 @@ const items: NavBarItems = {
     id: 'projects',
     link: '/#projects',
   },
+  CONTACT: {
+    title: 'Contacto',
+    id: 'contact',
+    link: '/#contact',
+  },
 }
 
 export default items

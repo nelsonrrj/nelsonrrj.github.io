@@ -10,7 +10,6 @@ import navBarItems from '~/data/navBarItems'
     >
       <About />
     </ContentSectionElement>
-
     <ContentSectionElement
       :id="navBarItems.EXPERIENCE.id"
       :title="navBarItems.EXPERIENCE.title"
