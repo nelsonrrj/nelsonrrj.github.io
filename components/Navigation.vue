@@ -67,16 +67,12 @@ onUnmounted(() => {
 <template>
   <nav>
     <ul>
-      <NavBarItem :item="navBarItems.ABOUT" />
-      <NavBarItem :item="navBarItems.EXPERIENCE" />
-      <NavBarItem
-        v-if="$config.public.enableProjects"
-        :item="navBarItems.PROJECTS"
-      />
-      <NavBarItem
-        v-if="$config.public.enableBlog"
-        :item="navBarItems.BLOG"
-      />
+      <li>
+        <NavBarItem :item="navBarItems.ABOUT" />
+      </li>
+      <li>
+        <NavBarItem :item="navBarItems.EXPERIENCE" />
+      </li>
     </ul>
   </nav>
 </template>

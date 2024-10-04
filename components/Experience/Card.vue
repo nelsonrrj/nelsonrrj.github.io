@@ -7,7 +7,7 @@ defineProps<{ work: Experience }>()
 
 <template>
   <article
-    class="group gap-3 rounded-md transition-colors hover:bg-slate-500/10 motion-reduce:transition-none lg:flex lg:flex-row lg:px-2"
+    class="group gap-3 rounded-md transition-colors hover:bg-slate-500/10 motion-reduce:transition-none lg:px-2 xl:flex xl:flex-row"
   >
     <header class="shrink-0">
       <span class="text-xs font-semibold opacity-60">
