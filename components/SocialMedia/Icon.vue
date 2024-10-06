@@ -16,7 +16,7 @@ defineProps({
     :to="to"
     external
     target="__blanck"
-    :arial-label="label"
+    :aria-label="label"
   >
     <slot
       name="icon"

@@ -4,10 +4,8 @@ defineProps<{ label: string; title: string }>()
 
 <template>
   <div>
-    <span>{{ title }}: </span>
-    <NuxtLink>
-      <span class="text-teal-300">{{ label }}</span>
-    </NuxtLink>
+    <span class="mr-1">{{ title }}:</span>
+    <span class="text-teal-300">{{ label }}</span>
   </div>
 </template>
 
