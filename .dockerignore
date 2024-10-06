@@ -1,0 +1,20 @@
+# Directorios generados por Nuxt
+.output
+.data
+.nitro
+.cache
+
+# Directorios de caché y logs
+.cache
+logs
+
+# Dependencias de desarrollo
+node_modules
+
+# Archivos temporales y de configuración
+npm-debug.log
+.git
+
+# Otros archivos/directorios a ignorar (si aplica)
+.vscode
+*.log

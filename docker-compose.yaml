@@ -1,0 +1,30 @@
+name: mypage
+
+services:
+  dev:
+    container_name: dev
+    build:
+      context: .
+      dockerfile: dockerfile
+      target: dev
+    ports:
+      - ${LOCAL_PORT:-3000}:3000
+    volumes:
+      - ./:/home/node/app
+  npm:
+    container_name: npm
+    build:
+      context: .
+      dockerfile: dockerfile
+      target: dev
+    volumes:
+      - ./:/home/node/app:rw
+    entrypoint: ['npm']
+  prod:
+    container_name: prod
+    build:
+      context: .
+      dockerfile: dockerfile
+      target: production
+    ports:
+      - ${LOCAL_PORT:-3000}:3000

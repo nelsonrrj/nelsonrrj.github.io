@@ -1,14 +1,13 @@
-## Create project nuxt
-``` bash
-docker compose run --rm -it nuxi init . -f
+## Develop
+
+### Create node_modules and generate nuxt files in local
+
+```
+docker compose run --rm npm install
 ```
 
-## Add a page
-``` bash
-docker compose run --rm -it nuxi add page <pageName>
-```
+### Start developer project
 
-## Run project
-``` bash
+```
 docker compose up dev
 ```
