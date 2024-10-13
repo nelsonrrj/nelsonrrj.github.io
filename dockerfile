@@ -1,12 +1,12 @@
 ARG NODE_VESION=22
 
-FROM node:${NODE_VESION}-alpine as base
+FROM node:${NODE_VESION}-alpine AS base
 
 EXPOSE 3000
 
 WORKDIR /home/node/app
 
-FROM base as dev
+FROM base AS dev
 
 RUN --mount=type=bind,source=package.json,target=package.json \
     --mount=type=bind,source=package-lock.json,target=package-lock.json \
@@ -23,7 +23,7 @@ USER node
 
 CMD ["npm","run", "dev"]
 
-FROM base as builder
+FROM base AS builder
 
 RUN --mount=type=bind,source=package.json,target=package.json \
     --mount=type=bind,source=package-lock.json,target=package-lock.json \
@@ -34,7 +34,7 @@ COPY . .
 
 RUN npm run build
 
-FROM base as production
+FROM base AS production
 
 COPY --from=builder --chown=node:node /home/node/app/.output/ /var/www/html
 
