@@ -12,13 +12,13 @@ import {
     <ul>
       <li>
         <ContactItem
-          title="Telefono"
+          title="Teléfono"
           :label="`+${DATA_FULL_NUMBER}`"
         />
       </li>
       <li>
         <ContactItem
-          title="Correo electrónico"
+          title="Email"
           :label="DATA_CONTACT_EMAIL"
         />
       </li>

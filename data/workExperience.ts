@@ -6,22 +6,40 @@ const WORK_EXPERIENCE = [
     position: 'Desarrollador Full Stack',
     sdate: '2021-02-01T00:00:00-04:00',
     edate: '2024-01-01T00:00:00-04:00',
-    description:
-      'Colaboré con un equipo para desarrollar nuevas funcionalidades en diversos servicios de Talently. Creé el sistema de postulación para la plataforma educativa GO! y un sistema de pagos en línea integrando Stripe mediante Laravel Cashier, incluyendo la gestión de cobros recurrentes. Mejoré los embudos de marketing y la gestión de clientes mediante la integración de ActiveCampaign y Pipedrive. Implementé servicios de análisis de usuarios como Mixpanel con Google Tag Manager, y mejoré la visibilidad y asistencia a clases personalizadas y eventos mediante la integración de Google Calendar y Calendly. Utilicé Laravel (versiones 6 y 9) con PHP (7.6 y 8), Nuxt con Vue y JavaScript.',
-    stack: ['Laravel', 'PHP', 'Phpunit', 'Nuxt', 'Vue', 'JavaScript', 'Docker'],
+    description: 'Forme parte del equipo de desarrollo de Talently donde:',
+    stack: [
+      'Laravel',
+      'PHP',
+      'Phpunit',
+      'Nuxt',
+      'Vue',
+      'JavaScript',
+      'Tailwindcss',
+      'Docker',
+    ],
     location: 'Remoto',
-    bulletPoints: [],
+    bulletPoints: [
+      'Creé del lado backend el sistema de postulación de la plataforma educativa Talently GO!.',
+      'Realice un sistema de pagos en línea con Stripe mediante Laravel Cashier.',
+      'Ayudé a mejorar los embudos de marketing y la gestión de clientes mediante la integración de ActiveCampaign y Pipedrive. ',
+      'Implementé el servicio de análisis de datos de usuarios, Mixpanel y Google Tag Manager.',
+      'Mejoré la visibilidad y asistencia a clases personalizadas y eventos de talently mediante la integración de Google Calendar y Calendly.',
+    ],
   },
   {
     company: 'Talently',
     position: 'Tech lead',
-    sdate: '2021-02-01T00:00:00-04:00',
+    sdate: '2021-12-01T00:00:00-04:00',
     edate: '2023-06-01T00:00:00-04:00',
     description:
-      'Lideré técnicamente la plataforma educativa GO! de Talently, supervisando la revisión técnica y evaluando la viabilidad de nuevas funcionalidades. Organicé y distribuí tareas para un equipo de desarrolladores, asegurando la entrega puntual y de alta calidad de los proyectos. Colaborando con el equipo de diseño y producto para alinear las funcionalidades con las necesidades del usuario y los objetivos de negocio.',
+      'Lideré técnicamente la plataforma educativa GO! de Talently donde:',
     stack: [],
     location: 'Remoto',
-    bulletPoints: [],
+    bulletPoints: [
+      'Realicé la revisión técnica y evalúe la viabilidad de nuevas funcionalidades.',
+      'Organicé y distribuí tareas para un equipo de desarrolladores, asegurando la entrega puntual y de alta calidad de los proyectos.',
+      'Trabajé junto con el equipo de diseño y producto para alinear las funcionalidades con las necesidades del usuario y los objetivos de negocio.',
+    ],
   },
   {
     company: 'Sistran',
@@ -29,10 +47,9 @@ const WORK_EXPERIENCE = [
     sdate: '2020-10-01T00:00:00-04:00',
     edate: '2021-01-01T00:00:00-04:00',
     description:
-      'Como profesional independiente, colaboré en el desarrollo y mejora de la suite de productos de seguros Sistran, implementando nuevas funcionalidades y optimizando las existentes . Utilicé tecnologías React (v16.10) y Node.js (v4.16) para crear interfaces de usuario intuitivas y backend escalables.',
-    stack: ['React', 'Nodejs', 'JavaScript'],
+      'Como profesional independiente en Sistran implementé nuevas funcionalidades y me encargué de la corrección de bugs de las funcionalidades existentes.',
+    stack: ['React', 'Nodejs/Express', 'JavaScript'],
     location: 'Remoto',
-    bulletPoints: [],
   },
   {
     company: 'YOSS',
@@ -40,7 +57,7 @@ const WORK_EXPERIENCE = [
     sdate: '2019-10-01T00:00:00-04:00',
     edate: '2020-03-01T00:00:00-04:00',
     description:
-      'Como profesional independiente, me integré al equipo de desarrollo de YOSS para la renovación de las interfaces de usuario y el desarrollo de nuevas características. Utilizando Angularjs(v1.14).',
+      'Como profesional independiente, me integré al equipo de YOSS para renovar las interfaces de usuario y desarrollar nuevas características.',
     stack: ['Angularjs', 'JQuery', 'JavaScript'],
     location: 'Remoto',
     bulletPoints: [],
@@ -50,11 +67,13 @@ const WORK_EXPERIENCE = [
     position: 'Desarrollador Full Stack',
     sdate: '2019-01-01T00:00:00-04:00',
     edate: '2020-06-01T00:00:00-04:00',
-    description:
-      'Desarrollé una página web para la gestión administrativa de proveedores de servicio y clientes, optimizando la eficiencia en el manejo de información. Además, colaboré en equipo para crear un sistema integral para la planificación, venta y mantenimiento de proyectos inmobiliarios residenciales. Para esto utilicé las herramientas Angular (v7), Laravel (v5.7) y MySQL.',
+    description: 'Como trabajador de Remote pc solutions:',
     stack: ['Angular', 'Typescript', 'Laravel', 'PHP', 'MySql'],
     location: 'Venezuela',
-    bulletPoints: [],
+    bulletPoints: [
+      'Desarrollé una página web para la gestión administrativa de proveedores de servicio y clientes, optimizando la eficiencia en el manejo de información.',
+      'Colaboré para crear un sistema para la planificación, venta y mantenimiento de proyectos inmobiliarios residenciales.',
+    ],
   },
   {
     company: 'Karanta dev',
@@ -62,10 +81,15 @@ const WORK_EXPERIENCE = [
     sdate: '2017-08-01T00:00:00-04:00',
     edate: '2018-12-01T00:00:00-04:00',
     description:
-      'Colaboré en equipo para desarrollar sistemas en la startup Karanta, incluyendo un sistema de gestión de licencias de software y una plataforma para la gestión de información de pozos petroleros, optimizando el acceso a datos críticos. También participé en la creación de una librería de componentes reutilizables en Vue.js, para acelerar el desarrollo de proyectos. Utilicé las herramientas  Laravel (v5.7), Vue (v2.4), PostgreSQL y Jest (v22.4.2) para pruebas unitarias.',
+      'Colaboré en equipo para desarrollar sistemas en la startup Karanta:',
     stack: ['Vue', 'JavaScript', 'Jest', 'Laravel', 'PHP', 'Postgres'],
     location: 'Venezuela',
-    bulletPoints: [],
+    bulletPoints: [
+      'Creé un sistema de gestión de licencias de software.',
+      'Colaboré en la implementación de una plataforma para la gestión de información de pozos petroleros y optimizar el acceso a datos críticos.',
+      'Participé en la creación de una librería de componentes reutilizables en Vue.js, para acelerar el desarrollo de proyectos internos.',
+      'Tecnologías utilizadas: Laravel (v5.7), Vue (v2.4), PostgreSQL y Jest (v22.4.2) para pruebas unitarias de Vuejs.',
+    ],
   },
 ]
 

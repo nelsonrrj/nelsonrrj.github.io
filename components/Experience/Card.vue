@@ -19,7 +19,22 @@ defineProps<{ work: Experience }>()
       <h1 class="text-lg font-bold group-hover:text-teal-300">
         {{ work.position }} · {{ work.company }} · {{ work.location }}
       </h1>
-      <p class="mb-3 text-pretty text-sm">{{ work.description }}</p>
+      <div class="mb-3">
+        <p class="text-pretty text-sm">{{ work.description }}</p>
+        <ul
+          v-if="work.bulletPoints?.length"
+          class="mb-3"
+        >
+          <template
+            v-for="(bullet, index) in work.bulletPoints"
+            :key="index"
+          >
+            <li class="ml-6 list-item list-disc text-pretty text-sm">
+              {{ bullet }}
+            </li>
+          </template>
+        </ul>
+      </div>
       <ExperienceStack :stack="work.stack" />
     </div>
   </article>
