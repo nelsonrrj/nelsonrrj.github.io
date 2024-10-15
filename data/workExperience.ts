@@ -88,7 +88,6 @@ const WORK_EXPERIENCE = [
       'Creé un sistema de gestión de licencias de software.',
       'Colaboré en la implementación de una plataforma para la gestión de información de pozos petroleros y optimizar el acceso a datos críticos.',
       'Participé en la creación de una librería de componentes reutilizables en Vue.js, para acelerar el desarrollo de proyectos internos.',
-      'Tecnologías utilizadas: Laravel (v5.7), Vue (v2.4), PostgreSQL y Jest (v22.4.2) para pruebas unitarias de Vuejs.',
     ],
   },
 ]

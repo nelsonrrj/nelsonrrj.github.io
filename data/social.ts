@@ -2,7 +2,7 @@ export const DATA_CONTACT_EMAIL = 'nelsonrodriguezj@gmail.com'
 
 export const DATA_FULL_NUMBER = '584248992118'
 
-export const LINK_CURRICULUM = `https://drive.google.com/file/d/1WsYU10GphpmXBbMyE1kd_AMlqrx2kCpl/view`
+export const LINK_CURRICULUM = `https://drive.google.com/file/d/1kZhaatWTqjvSXgDJ5E4_yrnLb4ZCF4nV/view?usp=sharing`
 
 export const LINK_GITHUB_PROFILE = 'https://github.com/nelsonrrj'
 
