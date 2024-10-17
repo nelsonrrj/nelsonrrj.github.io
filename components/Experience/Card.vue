@@ -7,7 +7,7 @@ defineProps<{ work: Experience }>()
 
 <template>
   <article
-    class="group gap-3 rounded-md transition-colors hover:bg-slate-500/10 motion-reduce:transition-none lg:px-2 xl:flex xl:flex-row"
+    class="group gap-3 rounded-md transition-colors motion-reduce:transition-none md:hover:bg-slate-500/10 lg:px-2 xl:flex xl:flex-row"
   >
     <header class="shrink-0">
       <span class="text-xs font-semibold opacity-60">
@@ -16,7 +16,7 @@ defineProps<{ work: Experience }>()
       </span>
     </header>
     <div>
-      <h1 class="text-lg font-bold group-hover:text-teal-300">
+      <h1 class="text-lg font-bold md:group-hover:text-teal-300">
         {{ work.position }} · {{ work.company }} · {{ work.location }}
       </h1>
       <div class="mb-3">

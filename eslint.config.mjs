@@ -3,13 +3,8 @@ import withNuxt from './.nuxt/eslint.config.mjs'
 
 export default withNuxt(eslintPluginPrettierRecommended, {
   rules: {
-    semi: ['error', 'never'],
-    'vue/attributes-order': ['error'],
-    'vue/multi-word-component-names': ['off'],
-    '@stylistic/quote-props': ['error', 'as-needed'],
-    '@stylistic/brace-style': ['error', '1tbs'],
     '@stylistic/arrow-parens': ['error', 'always'],
-    '@stylistic/operator-linebreak': ['error', 'after'],
+    '@stylistic/brace-style': ['error', '1tbs'],
     '@stylistic/member-delimiter-style': [
       'error',
       {
@@ -18,5 +13,11 @@ export default withNuxt(eslintPluginPrettierRecommended, {
         multilineDetection: 'brackets',
       },
     ],
+    '@stylistic/operator-linebreak': ['error', 'after'],
+    '@stylistic/quote-props': ['error', 'as-needed'],
+    '@stylistic/comma-dangle': ['error', 'only-multiline'],
+    semi: ['error', 'never'],
+    'vue/attributes-order': ['error'],
+    'vue/multi-word-component-names': ['off'],
   },
 })

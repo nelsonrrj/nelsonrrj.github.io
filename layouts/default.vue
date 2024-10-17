@@ -1,7 +1,7 @@
 <script setup lang="ts"></script>
 
 <template>
-  <div class="container m-auto h-screen w-screen">
+  <div class="container m-auto w-screen">
     <slot />
   </div>
 </template>
