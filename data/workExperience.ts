@@ -3,6 +3,21 @@ import type { Experience } from '~/types/experience'
 const WORK_EXPERIENCE = [
   {
     company: 'Talently',
+    position: 'Tech lead',
+    sdate: '2021-12-01T00:00:00-04:00',
+    edate: '2024-01-01T00:00:00-04:00',
+    description:
+      'Lideré técnicamente las plataformas Talently GO! y Talently Match donde:',
+    stack: [],
+    location: 'Remoto',
+    bulletPoints: [
+      'Realicé la revisión técnica y evalúe la viabilidad de nuevas funcionalidades.',
+      'Organicé y distribuí tareas para un equipo de desarrolladores, asegurando la entrega puntual y de alta calidad de los proyectos.',
+      'Trabajé junto con el equipo de diseño y producto para alinear las funcionalidades con las necesidades del usuario y los objetivos de negocio.',
+    ],
+  },
+  {
+    company: 'Talently',
     position: 'Desarrollador Full Stack',
     sdate: '2021-02-01T00:00:00-04:00',
     edate: '2024-01-01T00:00:00-04:00',
@@ -14,31 +29,16 @@ const WORK_EXPERIENCE = [
       'Nuxt',
       'Vue',
       'JavaScript',
-      'Tailwindcss',
+      'TailwindCSS',
       'Docker',
     ],
     location: 'Remoto',
     bulletPoints: [
       'Creé del lado backend el sistema de postulación de la plataforma educativa Talently GO!.',
-      'Realice un sistema de pagos en línea con Stripe mediante Laravel Cashier.',
+      'Realicé un sistema de pagos en línea con Stripe mediante Laravel Cashier.',
       'Ayudé a mejorar los embudos de marketing y la gestión de clientes mediante la integración de ActiveCampaign y Pipedrive. ',
       'Implementé el servicio de análisis de datos de usuarios, Mixpanel y Google Tag Manager.',
       'Mejoré la visibilidad y asistencia a clases personalizadas y eventos de talently mediante la integración de Google Calendar y Calendly.',
-    ],
-  },
-  {
-    company: 'Talently',
-    position: 'Tech lead',
-    sdate: '2021-12-01T00:00:00-04:00',
-    edate: '2023-06-01T00:00:00-04:00',
-    description:
-      'Lideré técnicamente la plataforma educativa GO! de Talently donde:',
-    stack: [],
-    location: 'Remoto',
-    bulletPoints: [
-      'Realicé la revisión técnica y evalúe la viabilidad de nuevas funcionalidades.',
-      'Organicé y distribuí tareas para un equipo de desarrolladores, asegurando la entrega puntual y de alta calidad de los proyectos.',
-      'Trabajé junto con el equipo de diseño y producto para alinear las funcionalidades con las necesidades del usuario y los objetivos de negocio.',
     ],
   },
   {
@@ -76,7 +76,7 @@ const WORK_EXPERIENCE = [
     ],
   },
   {
-    company: 'Karanta dev',
+    company: 'Karanta',
     position: 'Desarrollador Full Stack',
     sdate: '2017-08-01T00:00:00-04:00',
     edate: '2018-12-01T00:00:00-04:00',
