@@ -32,6 +32,9 @@ export default defineNuxtConfig({
         class: 'scroll-smooth',
         lang: 'es',
       },
+      bodyAttrs: {
+        class: 'cursor-default',
+      },
     },
   },
 
