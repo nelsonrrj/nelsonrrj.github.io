@@ -3,6 +3,7 @@
 .data
 .nitro
 .cache
+.nuxt
 
 # Directorios de caché y logs
 .cache

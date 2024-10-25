@@ -1,30 +1,33 @@
 name: mypage
 
 services:
-  dev:
-    container_name: dev
+  start-dev:
+    container_name: start-dev
     build:
       context: .
-      dockerfile: dockerfile
-      target: dev
+      dockerfile: Dockerfile
+      target: develop
     ports:
-      - ${LOCAL_PORT:-3000}:3000
+      - 3000:3000
     volumes:
-      - ./:/home/node/app
+      - ./:/var/www/html
+      - /var/www/html/.nuxt
+      - /var/www/html/node_modules
+  start-prod:
+    container_name: start-prod
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: production
+    ports:
+      - 3001:3001
   npm:
     container_name: npm
     build:
       context: .
-      dockerfile: dockerfile
-      target: dev
+      dockerfile: Dockerfile
+      target: base
+    user: 1000:1000
+    entrypoint: ["npm"]
     volumes:
-      - ./:/home/node/app:rw
-    entrypoint: ['npm']
-  prod:
-    container_name: prod
-    build:
-      context: .
-      dockerfile: dockerfile
-      target: production
-    ports:
-      - ${LOCAL_PORT:-3000}:3000
+      - ./:/var/www/html
