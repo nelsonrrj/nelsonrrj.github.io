@@ -28,13 +28,6 @@ export default defineNuxtConfig({
             'Nelson Rodriguez, Nelson Rodríguez, nelson rodriguez, Nelsonrrj, nelsonrrj, Portafolio, portafolio de nelson rodriguez',
         },
       ],
-      htmlAttrs: {
-        class: 'scroll-smooth',
-        lang: 'es',
-      },
-      bodyAttrs: {
-        class: 'cursor-default',
-      },
     },
   },
 

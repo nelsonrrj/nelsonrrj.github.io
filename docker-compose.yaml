@@ -27,7 +27,7 @@ services:
       context: .
       dockerfile: Dockerfile
       target: base
-    user: 1000:1000
+    user: ${uid:-1000}:${gid:-1000}
     entrypoint: ["npm"]
     volumes:
       - ./:/var/www/html
