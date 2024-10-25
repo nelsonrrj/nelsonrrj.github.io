@@ -4,9 +4,9 @@ defineProps<{ title: string }>()
 
 <template>
   <div
-    class="sticky top-0 z-40 h-10 content-center bg-slate-800/90 backdrop-blur-3xl"
+    class="sticky top-0 z-40 h-10 content-center bg-background-light dark:bg-background-dark"
   >
-    <h1 class="text-xl font-semibold">{{ title }}</h1>
+    <h1 class="text-xl font-bold">{{ title }}</h1>
   </div>
 </template>
 

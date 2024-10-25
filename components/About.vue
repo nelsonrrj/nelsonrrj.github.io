@@ -1,7 +1,7 @@
 <script setup lang="ts"></script>
 
 <template>
-  <section class="font-light">
+  <section>
     <p class="mb-3 text-pretty">
       Soy un desarrollador Full Stack con más de 7 años de experiencia con un
       enfoque hacia la creación de soluciones personalizadas. He liderado

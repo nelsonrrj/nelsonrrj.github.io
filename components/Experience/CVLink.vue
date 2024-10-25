@@ -5,7 +5,7 @@ import { LINK_CURRICULUM } from '~/data/social'
 <template>
   <NuxtLink
     :to="LINK_CURRICULUM"
-    class="group inline-flex rounded p-2 font-semibold hover:bg-slate-500/10 hover:text-teal-300"
+    class="group inline-flex rounded p-2 font-semibold hover:bg-background-dark/5 hover:text-accent-light dark:hover:bg-background/10 dark:hover:text-accent-dark"
     external
     target="_blank"
   >

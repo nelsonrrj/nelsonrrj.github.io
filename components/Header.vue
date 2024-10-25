@@ -1,7 +1,7 @@
 <script setup lang="ts"></script>
 
 <template>
-  <header class="z-50 flex flex-col bg-slate-800 lg:sticky lg:top-20 lg:h-96">
+  <header class="z-50 flex flex-col lg:sticky lg:top-20 lg:h-96">
     <HeaderPresentation class="mb-5" />
 
     <HeaderNavigation class="mb-5 hidden lg:block" />

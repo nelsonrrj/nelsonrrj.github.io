@@ -5,7 +5,9 @@ defineProps<{ label: string; title: string }>()
 <template>
   <div>
     <span>{{ title }}: </span>
-    <span class="text-teal-300">{{ label }}</span>
+    <span class="font-medium text-accent-light dark:text-accent-dark">
+      {{ label }}
+    </span>
   </div>
 </template>
 
