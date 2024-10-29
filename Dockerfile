@@ -21,6 +21,6 @@ RUN npm run build
 
 FROM base AS production
 ARG APP_FOLDER
-EXPOSE 3001
+EXPOSE 3000
 COPY --from=builder --chown=node:node ${APP_FOLDER}/.output/ /var/www/html
 CMD [ "node", "/var/www/html/server/index.mjs" ]

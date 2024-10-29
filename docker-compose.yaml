@@ -8,7 +8,7 @@ services:
       dockerfile: Dockerfile
       target: develop
     ports:
-      - 3000:3000
+      - ${APP_PORT:-3000}:3000
     volumes:
       - ./:/var/www/html
       - /var/www/html/.nuxt
@@ -20,14 +20,14 @@ services:
       dockerfile: Dockerfile
       target: production
     ports:
-      - 3001:3001
+      - ${APP_PORT:-3000}:3000
   npm:
     container_name: npm
     build:
       context: .
       dockerfile: Dockerfile
       target: base
-    user: ${uid:-1000}:${gid:-1000}
+    user: ${UID:-1000}:${GID:-1000}
     entrypoint: ["npm"]
     volumes:
       - ./:/var/www/html

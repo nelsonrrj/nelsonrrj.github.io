@@ -15,6 +15,8 @@
   "shutdownAction": "stopCompose",
   // Uncomment the next line if you want start specific services in your Docker Compose config.
   "runServices": ["start-dev"],
+  // Overrides the user that devcontainer.json supporting services tools / runs as in the contain
+  "remoteUser": "node",
   // Use 'forwardPorts' to make a list of ports inside the container available locally.
   "forwardPorts": ["3000:3000"],
   // Features to add to the dev container. More info: https://containers.dev/features.
@@ -24,7 +26,6 @@
       "version": "os-provided"
     },
     "ghcr.io/cirolosapio/devcontainers-features/alpine-bash:0": {},
-    "ghcr.io/cirolosapio/devcontainers-features/alpine-nano:0": {},
     "ghcr.io/cirolosapio/devcontainers-features/alpine-ohmyzsh:0": {}
   },
   // Configure tool-specific properties.
