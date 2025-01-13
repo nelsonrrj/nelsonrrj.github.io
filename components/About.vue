@@ -3,9 +3,9 @@
 <template>
   <section>
     <p class="mb-3 text-pretty">
-      Soy un desarrollador Full Stack con más de 7 años de experiencia con un
-      enfoque hacia la creación de soluciones personalizadas. He liderado
-      equipos, demostrando habilidades de liderazgo y gestión de proyectos.
+      Soy un desarrollador Full Stack con más de 7 años de experiencia en la
+      creación de aplicaciones web personalizadas. He liderado equipos de
+      desarrollo, gestionando la creación y mantenimiento de proyectos
     </p>
     <p class="text-pretty">
       He colaborado en el desarrollo de plataformas utilizando una variedad de
